@@ -16,6 +16,8 @@ var plus = document.getElementById("plus");
 var minus = document.getElementById("minus");
 var multi = document.getElementById("multi");
 var divide = document.getElementById("divide");
+var square = document.getElementById("square");
+var root = document.getElementById("root");
 var equality = document.getElementById("equality");
 var dot = document.getElementById("dot");
 var inverse = document.getElementById("inverse");
@@ -216,6 +218,11 @@ minus.addEventListener("click", () => {
     push = "divide";
     num1 = Number(heading.textContent);
     heading.textContent = 0;
+  });
+
+  square.addEventListener("click", () => {
+    num1 = Number(heading.textContent);
+    heading.textContent = num1 * num1;
   });
 
   inverse.addEventListener("click", () => {
